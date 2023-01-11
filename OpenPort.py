@@ -26,7 +26,7 @@ def get_nodeexporter(host,username,password):
     openPort(host,username,password)
 
 #csvdata = pandas.read_csv(r'C:\Users\10686066\Desktop\python\Data.csv')
-csvdata = pandas.read_excel("Canvas Workplace Machines New.xlsx", engine='openpyxl')
+csvdata = pandas.read_excel("ServerList.xlsx", engine='openpyxl')
 
 for index, row in csvdata.iterrows():
     if str(row["PRIVATE IP ADDRESS"]) != "10.198.181.14":
